@@ -1,0 +1,143 @@
+
+* {
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Rubik', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    display: flex;
+    height: 100vh;
+  }
+    .container {
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    -webkit-animation-name: left-section;
+            animation-name: left-section;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+    -webkit-animation-delay: 1s;
+            animation-delay: 1s;
+  }
+  .container{
+    flex: 1;
+    background: linear-gradient(to right, #e90b0b 0%, #fd9d08 100%);
+    transition: 1s;
+    background-image: url(https://previews.123rf.com/images/guzmania/guzmania0810/guzmania081000012/3656358-decorative-flowers-on-abstract-background-vector-illustration-please-see-some-similar-pictures-from-.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .header > h1 {
+    margin: 0;
+    color: #f56606;
+  }
+  .header > h4 {
+    margin-top: 20px;
+    font-weight: normal;
+    font-size: 40px;
+    color: rgba(18, 131, 236, 0.4);
+  }
+  .header> h3 {
+    max-width: 90%;
+    display: flex;
+    flex-direction: column;
+  }
+  .header> h5 {
+    text-align:j;
+    font-size: ;
+  }
+  .header> h2 {
+    color: #000;
+    font-size: 10px;
+  }
+  .form-field {
+    height: 46px;
+    padding: 0 16px;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    font-family: 'Rubik', sans-serif;
+    outline: 0;
+    transition: .2s;
+    margin-top: 20px;
+  }
+  .form-field:focus {
+    border-color: #0f7ef1;
+  }
+  .form > button {
+    padding: 12px 10px;
+    border: 0;
+    background: linear-gradient(to right, #f50629 0%, #fd9d08 100%);
+    border-radius: 3px;
+    margin-top: 10px;
+    color: #fff;
+    letter-spacing: 1px;
+    font-family: 'Rubik', sans-serif;
+  }
+  .animation {
+    -webkit-animation-name: move;
+            animation-name: move;
+    -webkit-animation-duration: .4s;
+            animation-duration: .4s;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+    -webkit-animation-delay: 2s;
+            animation-delay: 2s;
+  }
+   
+  .a1 {
+    -webkit-animation-delay: 2s;
+            animation-delay: 2s;
+  }
+  .a2 {
+    -webkit-animation-delay: 2.1s;
+            animation-delay: 2.1s;
+  }
+  .a3 {
+    -webkit-animation-delay: 2.2s;
+            animation-delay: 2.2s;
+  }
+  .a4 {
+    -webkit-animation-delay: 2.3s;
+            animation-delay: 2.3s;
+  }
+  .a5 {
+    -webkit-animation-delay: 2.4s;
+            animation-delay: 2.4s;
+  }
+  .a6 {
+    -webkit-animation-delay: 2.5s;
+            animation-delay: 2.5s;
+  }
+  @keyframes move {
+    0% {
+      opacity: 0;
+      visibility: hidden;
+      -webkit-transform: translateY(-40px);
+              transform: translateY(-40px);
+    }
+    100% {
+      opacity: 1;
+      visibility: visible;
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+  }
+  @keyframes left-section {
+    0% {
+      opacity: 0;
+      width: 0;
+    }
+    100% {
+      opacity: 1;
+      padding: 20px 40px;
+      width: 440px;
+    }
+  }
